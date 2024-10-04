@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: grid;
+            height: 200px;
+            width: 100%;
+            /* row-gap: 5px; */
+            /* column-gap: 5px; */
+
+            grid-template-areas:
+                "img1 img1 img2 img2 img3 img3 img4 img4"
+                "img1 img1 img2 img2 img3 img3 img4 img4"
+                "img5 img5 img6 img6 img3 img3 img7 img7"
+                "img5 img5 img6 img6 img3 img3 img7 img7";
+        }
+
+        /* .images{ */
+        /* height: 100px; */
+        /* width: 100px; */
+        /* } */
+
+        .img1 {
+            grid-area: img1;
+            /* width: 100px; */
+        }
+
+        .img2 {
+            grid-area: img2;
+            /* width: 100px; */
+        }
+
+        .img3 {
+            grid-area: img3;
+            /* width: 100px; */
+        }
+
+        .img4 {
+            grid-area: img4;
+            /* width: 100px; */
+        }
+
+        .img5 {
+            grid-area: img5;
+            /* width: 100px; */
+        }
+
+        .img6 {
+            grid-area: img6;
+            /* width: 100px; */
+        }
+
+        .img7 {
+            grid-area: img7;
+            /* width: 100px; */
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+@media screen and (width<600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="images img1"><img src="train.jpg"  alt=""></div>
+        <div class="images img2"><img src="bulb and plant.jpg"  alt=""></div>
+        <div class="images img3"><img src="church 1.jpg" ></div>
+        <div class="images img4"><img src="filament.jpg"  alt=""></div>
+        <div class="images img5"><img src="charminar.jpg"  alt=""></div>
+        <div class="images img6"><img src="guitar.jpg"  alt=""></div>
+        <div class="images img7"><img src="strings.jpg"  alt=""></div>
+    </div>
+</body>
+
+</html>
